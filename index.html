@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Surpresa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- TELA INICIAL -->
+  <div id="tela-inicial" class="tela ativa">
+    <img src="img_1.jpg" alt="Início" id="imgInicio">
+  </div>
+
+  <!-- TELA DO VÍDEO 1 -->
+  <div id="tela-video1" class="tela">
+    <video
+      id="video1"
+      playsinline
+      webkit-playsinline
+      controls
+    >
+      <source src="video_1.mp4" type="video/mp4">
+      Seu navegador não suporta vídeo.
+    </video>
+  </div>
+
+  <!-- TELA FINAL (IMAGEM) -->
+  <div id="tela-final" class="tela">
+    <img src="img_2.jpg" alt="Final" id="imgFinal">
+  </div>
+
+  <!-- TELA DO VÍDEO 2 (PEDIDO) -->
+  <div id="tela-video2" class="tela">
+    <video
+      id="video2"
+      playsinline
+      webkit-playsinline
+      controls
+    >
+      <source src="video_2.mp4" type="video/mp4">
+      Seu navegador não suporta vídeo.
+    </video>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

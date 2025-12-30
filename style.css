@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background: black;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  overflow: hidden;
+}
+
+/* Telas */
+.tela {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(1.03);
+  filter: blur(8px);
+
+  transition:
+    opacity 1.2s ease,
+    transform 1.2s ease,
+    filter 1.2s ease;
+}
+
+.tela.ativa {
+  opacity: 1;
+  pointer-events: all;
+  transform: scale(1);
+  filter: blur(0);
+}
+
+/* Imagens full screen */
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+/* Vídeos full screen */
+video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  background: black;
+}
